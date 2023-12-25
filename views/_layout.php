@@ -11,7 +11,9 @@
 </head>
 <body>
 
+    <main>
         <?php include_once 'views/' . $page . '_view.php'; ?>
+    </main>
 
     <footer></footer>
     <script src="<?= PATH ?>assets/js/main.js"></script>
