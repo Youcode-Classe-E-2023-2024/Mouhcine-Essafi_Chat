@@ -12,13 +12,13 @@ class UserLogin
     public function loginUser($email, $password)
     {
         // Validate input data
-        // !$this->validatePassword($password))
-        if ((!$this->validateEmail($email)) || (!$this->validatePassword($password)))  {
+        // || (!$this->validatePassword($password))
+        if ((!$this->validateEmail($email)) )  {
             return "Invalid input data";
         }
 
         // Retrieve user data from the database
-        $query = "SELECT id_utilisateur, mot_de_passe FROM utlisateur WHERE email = '$email'";
+        $query = "SELECT user_id, password FROM utilisateur WHERE email = '$email'";
         $result = $this->db->query($query);
 
         if (!$result) {
@@ -33,13 +33,13 @@ class UserLogin
         }
 
         // Verify the password
-        if (!password_verify($password, $userData['mot_de_passe'])) {
+        if (!password_verify($password, $userData['password'])) {
             return "Invalid password";
         }
 
         // Set user session or token for authentication
         // For simplicity, we'll just return the user ID in this example
-        // return $userData['id_utilisateur'];
+        // return $userData['user_id'];
         return true;
     }
 
