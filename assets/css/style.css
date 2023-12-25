@@ -8,3 +8,12 @@ tfoot {
     background-color: #333;
     color: #fff;
 }
+
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: #f8d7da; /* Red background color for danger alerts */
+    color: #721c24; /* Dark red text color for danger alerts */
+    border-radius: 5px;
+}
