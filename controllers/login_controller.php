@@ -5,7 +5,7 @@ if (isset($_POST['submit_l'])) {
     $registrationResult = $userRegistration->loginUser($_POST['log_email'], $_POST['log_password']);
     echo '<div class="alert">' . $registrationResult . '</div>';
     if ($registrationResult === true) {
-        header('location: index.php?page=');
+        header('location: index.php?page=home');
     }
     else
         header('location: index.php?page=login');
