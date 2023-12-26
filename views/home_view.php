@@ -22,7 +22,7 @@
           </div>
           <div class="ml-2 font-bold text-2xl">QuickChat</div>
         </div>
-        <div
+        <!-- <div
           class="flex flex-col items-center bg-indigo-100 border border-gray-200 mt-4 w-full py-6 px-4 rounded-lg"
         >
           <div class="h-20 w-20 rounded-full border overflow-hidden">
@@ -42,7 +42,7 @@
             </div>
             <div class="leading-none ml-1 text-xs">Active</div>
           </div>
-        </div>
+        </div> -->
         <div class="flex flex-col mt-8">
           <div class="flex flex-row items-center justify-between text-xs">
             <span class="font-bold">Active Conversations</span>
