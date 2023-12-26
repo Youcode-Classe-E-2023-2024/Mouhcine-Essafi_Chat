@@ -7,7 +7,7 @@
                 <div class="w-1/3 border flex flex-col">
 
                     <!-- Header -->
-                    <div class="py-2 px-3 bg-grey-lighter flex flex-row justify-end items-center">
+                    <div class="py-2 px-3 bg-gray-400 flex flex-row justify-end items-center">
 
                         <div class="flex">
                             <!-- <div>
