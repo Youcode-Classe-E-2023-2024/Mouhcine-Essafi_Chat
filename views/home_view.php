@@ -1,404 +1,224 @@
-<div class="flex h-screen antialiased text-gray-800">
-    <div class="flex flex-row h-full w-full overflow-x-hidden">
-      <div class="flex flex-col py-8 pl-6 pr-2 w-64 bg-white flex-shrink-0">
-        <div class="flex flex-row items-center justify-center h-12 w-full">
-          <div
-            class="flex items-center justify-center rounded-2xl text-indigo-700 bg-indigo-100 h-10 w-10"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-              ></path>
-            </svg>
-          </div>
-          <div class="ml-2 font-bold text-2xl">QuickChat</div>
-        </div>
-        <!-- <div
-          class="flex flex-col items-center bg-indigo-100 border border-gray-200 mt-4 w-full py-6 px-4 rounded-lg"
-        >
-          <div class="h-20 w-20 rounded-full border overflow-hidden">
-            <img
-              src="https://avatars3.githubusercontent.com/u/2763884?s=128"
-              alt="Avatar"
-              class="h-full w-full"
-            />
-          </div>
-          <div class="text-sm font-semibold mt-2">Aminos Co.</div>
-          <div class="text-xs text-gray-500">Lead UI/UX Designer</div>
-          <div class="flex flex-row items-center mt-3">
-            <div
-              class="flex flex-col justify-center h-4 w-8 bg-indigo-500 rounded-full"
-            >
-              <div class="h-3 w-3 bg-white rounded-full self-end mr-1"></div>
-            </div>
-            <div class="leading-none ml-1 text-xs">Active</div>
-          </div>
-        </div> -->
-        <div class="flex flex-col mt-8">
-          <div class="flex flex-row items-center justify-between text-xs">
-            <span class="font-bold">Active Conversations</span>
-            <span
-              class="flex items-center justify-center bg-gray-300 h-4 w-4 rounded-full"
-              >4</span
-            >
-          </div>
-          <div class="flex flex-col space-y-1 mt-4 -mx-2 h-48 overflow-y-auto">
-            <button
-              class="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
-            >
-              <div
-                class="flex items-center justify-center h-8 w-8 bg-indigo-200 rounded-full"
-              >
-                H
-              </div>
-              <div class="ml-2 text-sm font-semibold">Henry Boyd</div>
-            </button>
-            <button
-              class="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
-            >
-              <div
-                class="flex items-center justify-center h-8 w-8 bg-gray-200 rounded-full"
-              >
-                M
-              </div>
-              <div class="ml-2 text-sm font-semibold">Marta Curtis</div>
-              <div
-                class="flex items-center justify-center ml-auto text-xs text-white bg-red-500 h-4 w-4 rounded leading-none"
-              >
-                2
-              </div>
-            </button>
-            <button
-              class="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
-            >
-              <div
-                class="flex items-center justify-center h-8 w-8 bg-orange-200 rounded-full"
-              >
-                P
-              </div>
-              <div class="ml-2 text-sm font-semibold">Philip Tucker</div>
-            </button>
-            <button
-              class="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
-            >
-              <div
-                class="flex items-center justify-center h-8 w-8 bg-pink-200 rounded-full"
-              >
-                C
-              </div>
-              <div class="ml-2 text-sm font-semibold">Christine Reid</div>
-            </button>
-            <button
-              class="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
-            >
-              <div
-                class="flex items-center justify-center h-8 w-8 bg-purple-200 rounded-full"
-              >
-                J
-              </div>
-              <div class="ml-2 text-sm font-semibold">Jerry Guzman</div>
-            </button>
-          </div>
-          <div class="flex flex-row items-center justify-between text-xs mt-6">
-            <span class="font-bold">Archivied</span>
-            <span
-              class="flex items-center justify-center bg-gray-300 h-4 w-4 rounded-full"
-              >7</span
-            >
-          </div>
-          <div class="flex flex-col space-y-1 mt-4 -mx-2">
-            <button
-              class="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
-            >
-              <div
-                class="flex items-center justify-center h-8 w-8 bg-indigo-200 rounded-full"
-              >
-                H
-              </div>
-              <div class="ml-2 text-sm font-semibold">Henry Boyd</div>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col flex-auto h-full p-6">
-        <div
-          class="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full p-4"
-        >
-          <div class="flex flex-col h-full overflow-x-auto mb-4">
-            <div class="flex flex-col h-full">
-              <div class="grid grid-cols-12 gap-y-2">
-                <div class="col-start-1 col-end-8 p-3 rounded-lg">
-                  <div class="flex flex-row items-center">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
-                    >
-                      <div>Hey How are you today?</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-start-1 col-end-8 p-3 rounded-lg">
-                  <div class="flex flex-row items-center">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
-                    >
-                      <div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Vel ipsa commodi illum saepe numquam maxime
-                        asperiores voluptate sit, minima perspiciatis.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-start-6 col-end-13 p-3 rounded-lg">
-                  <div class="flex items-center justify-start flex-row-reverse">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
-                    >
-                      <div>I'm ok what about you?</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-start-6 col-end-13 p-3 rounded-lg">
-                  <div class="flex items-center justify-start flex-row-reverse">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
-                    >
-                      <div>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing. ?
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-start-1 col-end-8 p-3 rounded-lg">
-                  <div class="flex flex-row items-center">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
-                    >
-                      <div>Lorem ipsum dolor sit amet !</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-start-6 col-end-13 p-3 rounded-lg">
-                  <div class="flex items-center justify-start flex-row-reverse">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
-                    >
-                      <div>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing. ?
-                      </div>
-                      <div
-                        class="absolute text-xs bottom-0 right-0 -mb-5 mr-2 text-gray-500"
-                      >
-                        Seen
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-start-1 col-end-8 p-3 rounded-lg">
-                  <div class="flex flex-row items-center">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
-                    >
-                      <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perspiciatis, in.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-start-1 col-end-8 p-3 rounded-lg">
-                  <div class="flex flex-row items-center">
-                    <div
-                      class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
-                    >
-                      <div class="flex flex-row items-center">
-                        <button
-                          class="flex items-center justify-center bg-indigo-600 hover:bg-indigo-800 rounded-full h-8 w-10"
-                        >
-                          <svg
-                            class="w-6 h-6 text-white"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="1.5"
-                              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                            ></path>
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="1.5"
-                              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            ></path>
-                          </svg>
-                        </button>
-                        <div class="flex flex-row items-center space-x-px ml-4">
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-12 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-6 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-5 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-3 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
-                          <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+<div>
+    <div class="container mx-auto">
+        <div class="py-6 h-screen">
+            <div class="flex border border-grey rounded shadow-lg h-full">
+
+                <!-- Left -->
+                <div class="w-1/3 border flex flex-col">
+
+                    <!-- Header -->
+                    <div class="py-2 px-3 bg-grey-lighter flex flex-row justify-end items-center">
+
+                        <div class="flex">
+                            <!-- <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="#727A7E" d="M12 20.664a9.163 9.163 0 0 1-6.521-2.702.977.977 0 0 1 1.381-1.381 7.269 7.269 0 0 0 10.024.244.977.977 0 0 1 1.313 1.445A9.192 9.192 0 0 1 12 20.664zm7.965-6.112a.977.977 0 0 1-.944-1.229 7.26 7.26 0 0 0-4.8-8.804.977.977 0 0 1 .594-1.86 9.212 9.212 0 0 1 6.092 11.169.976.976 0 0 1-.942.724zm-16.025-.39a.977.977 0 0 1-.953-.769 9.21 9.21 0 0 1 6.626-10.86.975.975 0 1 1 .52 1.882l-.015.004a7.259 7.259 0 0 0-5.223 8.558.978.978 0 0 1-.955 1.185z"></path>
+                                </svg>
+                            </div> -->
+                            <div class="ml-4">
+                                <svg viewBox="0 0 24 24"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M12 8V14M15 11H9M12.2896 17.9984C18.0965 17.9343 21 15.9189 21 11C21 6 18 4 12 4C6 4 3 6 3 11C3 14.0771 4.13623 16.018 6.40868 17.0557L5 21L12.2896 17.9984Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="#263238" fill-opacity=".6" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path>
+                                </svg>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+
+                    <!-- Search -->
+                    <!-- <div class="py-2 px-2 bg-grey-lightest">
+                        <input type="text" class="w-full px-2 py-2 text-sm" placeholder="Search or start new chat" />
+                    </div> -->
+
+                    <!-- Rooms -->
+                    <div class="bg-grey-lighter flex-1 overflow-auto">
+                        <div class="px-3 flex items-center bg-grey-light cursor-pointer">
+                            <div>
+                                <img class="h-12 w-12 rounded-full" src="https://darrenjameseeley.files.wordpress.com/2014/09/expendables3.jpeg" />
+                            </div>
+                            <div class="ml-4 flex-1 border-b border-grey-lighter py-4">
+                                <div class="flex items-bottom justify-between">
+                                    <p class="text-grey-darkest">
+                                        New Movie! Expendables 4
+                                    </p>
+                                    <p class="text-xs text-grey-darkest">
+                                        12:45 pm
+                                    </p>
+                                </div>
+                                <p class="text-grey-dark mt-1 text-sm">
+                                    Get Andrés on this movie ASAP!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white px-3 flex items-center hover:bg-grey-lighter cursor-pointer">
+                            <div>
+                                <img class="h-12 w-12 rounded-full" src="https://www.famousbirthdays.com/headshots/russell-crowe-6.jpg" />
+                            </div>
+                            <div class="ml-4 flex-1 border-b border-grey-lighter py-4">
+                                <div class="flex items-bottom justify-between">
+                                    <p class="text-grey-darkest">
+                                        Russell Crowe
+                                    </p>
+                                    <p class="text-xs text-grey-darkest">
+                                        12:45 pm
+                                    </p>
+                                </div>
+                                <p class="text-grey-dark mt-1 text-sm">
+                                    Hold the line!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white px-3 flex items-center hover:bg-green-500 cursor-pointer">
+                            <div>
+                                <img class="h-12 w-12 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGpYTzuO0zLW7yadaq4jpOz2SbsX90okb24Z9GtEvK6Z9x2zS5" />
+                            </div>
+                            <div class="ml-4 flex-1 border-b border-grey-lighter py-4">
+                                <div class="flex items-bottom justify-between">
+                                    <p class="text-grey-darkest">
+                                        Tom Cruise
+                                    </p>
+                                    <p class="text-xs text-grey-darkest">
+                                        12:45 pm
+                                    </p>
+                                </div>
+                                <p class="text-grey-dark mt-1 text-sm">
+                                    Show me the money!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
+
+
+                <!-- Right -->
+                <div class="w-2/3 border flex flex-col">
+
+                    <!-- Header -->
+                    <div class="py-2 px-3 bg-green-600 flex flex-row justify-between items-center">
+                        <div class="flex items-center">
+                            <div>
+                                <img class="w-10 h-10 rounded-full" src="https://darrenjameseeley.files.wordpress.com/2014/09/expendables3.jpeg" />
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-grey-darkest">
+                                    New Movie! Expendables 4
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="ml-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="#263238" fill-opacity=".6" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Messages -->
+                    <div class="flex-1 overflow-auto" style="background-color: #DAD3CC">
+                        <div class="py-2 px-3">
+
+                            <div class="flex justify-center mb-2">
+                                <div class="rounded py-2 px-4" style="background-color: #DDECF2">
+                                    <p class="text-sm uppercase">
+                                        February 20, 2018
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-center mb-4">
+                                <div class="rounded py-2 px-4" style="background-color: #FCF4CB">
+                                    <p class="text-xs">
+                                        Messages to this chat and calls are now secured with end-to-end encryption. Tap for more info.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex mb-2">
+                                <div class="rounded py-2 px-3" style="background-color: #F2F2F2">
+                                    <p class="text-sm text-teal">
+                                        Sylverter Stallone
+                                    </p>
+                                    <p class="text-sm mt-1">
+                                        He is. Just invited him to join.
+                                    </p>
+                                    <p class="text-right text-xs text-grey-dark mt-1">
+                                        12:45 pm
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-end mb-2">
+                                <div class="rounded py-2 px-3" style="background-color: #E2F7CB">
+                                    <p class="text-sm mt-1">
+                                        Hi guys.
+                                    </p>
+                                    <p class="text-right text-xs text-grey-dark mt-1">
+                                        12:45 pm
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-end mb-2">
+                                <div class="rounded py-2 px-3" style="background-color: #E2F7CB">
+                                    <p class="text-sm mt-1">
+                                        Count me in
+                                    </p>
+                                    <p class="text-right text-xs text-grey-dark mt-1">
+                                        12:45 pm
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex mb-2">
+                                <div class="rounded py-2 px-3" style="background-color: #F2F2F2">
+                                    <p class="text-sm text-purple">
+                                        Tom Cruise
+                                    </p>
+                                    <p class="text-sm mt-1">
+                                        Get Andrés on this movie ASAP!
+                                    </p>
+                                    <p class="text-right text-xs text-grey-dark mt-1">
+                                        12:45 pm
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Input -->
+                    <div class="bg-grey-lighter px-4 py-4 flex items-center">
+                        <div class="flex-1 mx-4">
+                            <input class="w-full border rounded px-2 py-2" type="text" />
+                        </div>
+                        <div>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="#263238" fill-opacity=".45" d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"></path>
+                            </svg> -->
+                            <button class="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white px-4 py-1 flex-shrink-0">
+                                <span>Send</span>
+                                <span class="ml-2">
+                                    <svg class="w-4 h-4 transform rotate-45 -mt-px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <div
-            class="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4"
-          >
-            <div>
-              <button
-                class="flex items-center justify-center text-gray-400 hover:text-gray-600"
-              >
-                <svg
-                  class="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div class="flex-grow ml-4">
-              <div class="relative w-full">
-                <input
-                  type="text"
-                  class="flex w-full border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10"
-                />
-                <button
-                  class="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-gray-400 hover:text-gray-600"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="ml-4">
-              <button
-                class="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white px-4 py-1 flex-shrink-0"
-              >
-                <span>Send</span>
-                <span class="ml-2">
-                  <svg
-                    class="w-4 h-4 transform rotate-45 -mt-px"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                    ></path>
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
