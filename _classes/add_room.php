@@ -1,34 +1,52 @@
 <?php
-class add_room {
+class add_room
+{
 
-    public function createRoom($roomName, $selectedUsers) {
-        // Validate inputs (you may add more validation as needed)
+    private $db;
 
-        // Create room in the 'room' table
-        $roomId = $this->insertRoom($roomName);
+    public function __construct($db)
+    {
+        $this->db = $db;
+    }
 
-        // Add users to the room in the 'user_room' table
+    public function createRoom($roomName, $creator, $selectedUsers)
+    {
+        // Insert room details into the 'room' table
+        $roomId = $this->insertRoom($roomName, $creator);
+
+        // Add users to the room in the 'room_member' table if they already selected
         if ($selectedUsers) {
-        $this->addUsersToRoom($selectedUsers, $roomId);}
+            $this->addUsersToInvitation($roomId, $creator, $selectedUsers);
+        }
 
         return "Room created successfully!";
     }
 
-    private function insertRoom($roomName) {
+    private function insertRoom($roomName, $creator)
+    {
         // Insert room details into the 'room' table and return the room ID
-        // This method should be adapted based on your database structure
-        // (e.g., use prepared statements to prevent SQL injection)
-        // ...
+        $sql = "INSERT INTO room (room_name, creator) VALUES ('$roomName', '$creator')";
+        $this->db->query($sql);
 
-        // For the sake of the example, let's assume a successful insertion and return a dummy ID
-        return 123;
+        // Return the auto-generated room ID
+        return $this->db->insert_id;
     }
 
-    private function addUsersToRoom($selectedUsers, $roomId) {
-        // Add user-room relationships into the 'user_room' table
-        // This method should be adapted based on your database structure
-        // ...
-
-        // For the sake of the example, let's assume a successful insertion
+    private function addUsersToInvitation($roomId, $creator, $selectedUsers)
+    {
+        // Add user-room relationships into the 'room_invitation' table
+        foreach ($selectedUsers as $userId) {
+            $sql = "INSERT INTO room_invitation (room_id, sender, receiver) VALUES ('$roomId', '$creator', '$userId')";
+            $this->db->query($sql);
+        }
     }
+
+    // private function addUsersToRoom($roomId, $selectedUsers)
+    // {
+    //     // Add user-room relationships into the 'room_member' table
+    //     foreach ($selectedUsers as $userId) {
+    //         $sql = "INSERT INTO room_member (room_id, user_id) VALUES ('$roomId', '$userId')";
+    //         $this->db->query($sql);
+    //     }
+    // }
 }
